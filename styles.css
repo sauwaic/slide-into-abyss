@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.captcha-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.captcha-image {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.captcha-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('dalle-office.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.empty-slot {
+    position: absolute;
+    bottom: 195px; /* Adjust the top value to place the slot correctly */
+    left: 133.5px; /* Adjust the left value to place the slot correctly */
+    width: 38.5px;
+    height: 38.5px;
+    /* background-color: red; */
+    background-image: url('puzzle-white-border.png');
+    background-size: 38.5px;
+    opacity: 0.7;
+}
+
+.puzzle-piece {
+    position: absolute;
+    bottom: 0;
+    left: 75px; /* Adjust the left value to place the piece correctly */
+    width: 175px;
+    height: 175px;
+    /* background-color: yellow; */
+    background-image: url('puzzle-workers.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.1s ease;
+}
+
+.slider-container {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    height: 25px;
+    width: 300px;
+    border-radius: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background: #FFFFFF;
+  background-image: url("fast-forward.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+}
